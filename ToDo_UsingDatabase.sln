@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo_UsingDatabase", "ToDo_UsingDatabase\ToDo_UsingDatabase.csproj", "{57528AD5-1610-4D7C-B5B5-AD2278C901F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57528AD5-1610-4D7C-B5B5-AD2278C901F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57528AD5-1610-4D7C-B5B5-AD2278C901F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57528AD5-1610-4D7C-B5B5-AD2278C901F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57528AD5-1610-4D7C-B5B5-AD2278C901F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69FBFC90-29EB-4FF7-AE4E-83769C5838CD}
+	EndGlobalSection
+EndGlobal

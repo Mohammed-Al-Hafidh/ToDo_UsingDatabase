@@ -1,0 +1,6 @@
+Buy milk;2020-02-02;5;Done
+Buy apples;2020-05-05;3;Pending
+Go Home;2020-12-12;1;Done
+Go school;2020-10-10;4;Done
+Buy car;2021-10-05;5;Pending
+Buy House;2021-10-30;5;Done

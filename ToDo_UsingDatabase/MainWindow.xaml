@@ -1,0 +1,39 @@
+﻿<Window x:Class="ToDo_UsingDatabase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDo_UsingDatabase"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListView Name="lvList" HorizontalAlignment="Left" Height="312" Margin="10,10,0,0" VerticalAlignment="Top" Width="430" SelectionChanged="lvList_SelectionChanged" MouseDown="lvList_MouseDown">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id" Width="30"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding TaskName}" Header="Task" Width="150"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding DueDate}" Header="Due Date" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Difficulty}" Header="Difficulty" Width="60"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Status}" Header="Status" Width="80"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Name="btnExportToFile" Content="Export all to File ..." HorizontalAlignment="Left" Margin="258,358,0,0" VerticalAlignment="Top" Width="145" Height="17" Click="btnExportToFile_Click"/>
+        <Button Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="466,358,0,0" VerticalAlignment="Top" Width="75" Click="btnAdd_Click"/>
+        <Button Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="573,358,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btnDelete_Click"/>
+        <Button Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="681,358,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btnUpdate_Click"/>
+        <TextBox Name="txtTask" HorizontalAlignment="Left" Height="23" Margin="597,43,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="159"/>
+        <Slider Name="slDifficulty" HorizontalAlignment="Left" Margin="597,98,0,0" VerticalAlignment="Top" Height="36" Width="159" SmallChange="1" Maximum="5" Minimum="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight"  TickFrequency="1"/>
+        <ComboBox Name="comStatus" HorizontalAlignment="Left" Margin="597,216,0,0" VerticalAlignment="Top" Width="159">
+            <ComboBoxItem>Done</ComboBoxItem>
+            <ComboBoxItem>Pending</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Task" HorizontalAlignment="Left" Margin="484,43,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.765,1.155"/>
+        <Label Content="Difficulty" HorizontalAlignment="Left" Margin="484,98,0,0" VerticalAlignment="Top"/>
+        <Label Content="Due Date" HorizontalAlignment="Left" Margin="484,151,0,0" VerticalAlignment="Top"/>
+        <Label Content="Status" HorizontalAlignment="Left" Margin="484,216,0,0" VerticalAlignment="Top"/>
+        <Label Name="lbSliderValue" Content="{Binding ElementName=slDifficulty, Path=Value}" HorizontalAlignment="Left" Margin="562,98,0,0" VerticalAlignment="Top" Width="30"/>
+        <DatePicker Name="dpDueDate" HorizontalAlignment="Left" Margin="597,151,0,0" VerticalAlignment="Top" />
+
+    </Grid>
+</Window>
